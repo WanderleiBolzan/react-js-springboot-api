@@ -1,9 +1,8 @@
-
 import './global.css';
-import Login from './pages/login'
+import Rotas from './routes';
 
 export default function App() {
-  return(
-    <Login/>
+  return (
+    <Rotas />
   );
 }

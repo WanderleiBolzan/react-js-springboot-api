@@ -1,13 +1,15 @@
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import Login from './pages/login';
+import Login from './pages/Login';
+import Book from './pages/Book';
 
-export default function Routes() {
-    return(
+export default function Rotas() {
+    return (
         <BrowserRouter>
-            <Switch>
-                <Route pat="/" component={Login}/>
-            </Switch>
+            <Routes>
+                <Route path="/" element={<Login />} />
+                <Route path="/book" element={<Book />} />
+            </Routes>
         </BrowserRouter>
-    )
+    );
 }
